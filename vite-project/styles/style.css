@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.animation {
+  background-color: #646cff;
+  height: 45vh;
+  margin-top: 95vh;
+  padding: 3rem;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(57, 53, 77);
+}
+
+header {
+  color: rgb(232, 175, 255);
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  color: #000000;
+  max-width: 1280px;
+  margin-top: 95vh;
+  padding: 3rem;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 30px;
+}
+
+.card {
+  padding: 2em;
+}
