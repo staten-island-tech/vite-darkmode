@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import { setupCounter } from './counter.js';
+
 import AOS from "aos";
 AOS.init();
 import {menu} from "./menu";
@@ -13,4 +13,4 @@ import {menu} from "./menu";
 //   </div>
 // `
 console.log(menu);
-setupCounter(document.querySelector('#counter'))
+
