@@ -41,11 +41,6 @@ body,
   background-color: var(--primary);
 }
 
-.main {
-  background-color: var(--secondary);
-  height: 90vh;
-}
-
 h1 {
   font-size: var(--h1);
 }
@@ -74,17 +69,24 @@ h5 {
   text-align: center;
 }
 
-.btn,
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
+.appetizers,
+.noodleSoup,
+.sandwiches{
+  margin: 3rem;
+}
+
+.btns,
+.btns:link,
+.btns:visited 
+ {border: none;
+  display: inline;
+  text-align: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
   display: inline-block;
   margin: 1rem auto;
-  font-size: 2rem;
-  border: none;
-  border-radius: 10rem;
+  border-radius: 15px;
+  font-size: 4rem;
   transition: all 0.2s;
 }
 
