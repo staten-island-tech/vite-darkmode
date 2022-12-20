@@ -71,15 +71,14 @@ img: "link",
 vegetarian: false
 },
 
-{type: "Bahn Mi",
+{type: "Banh Mi",
 name: "Bahn Mi Bo Kho",
 description: "Curry Beef Stew with Bread",
 price: 4.50,
 rating: 9.9,
 img: "link", 
 vegetarian: false
-,}
-
+},
 ]
 
 
