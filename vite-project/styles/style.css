@@ -104,25 +104,45 @@ h5 {
 
 .filters{
   display: inline;
+  margin-left: 3rem;
 }
 
-.btns,
-.btns:link,
-.btns:visited {
+.btnA,
+.btnA:link,
+.btnA:visited,
+.btnB,
+.btnB:link,
+.btnB:visited,
+.btnC,
+.btnC:link,
+.btnC:visited,
+.btnAll,
+.btnAll:link,
+.btnAll:visited,
+.color,
+.color:link,
+.color:visited {
   border: none;
   display: inline;
   text-align: center;
   justify-content: space-around;
-  padding: 1rem 2rem;
+  padding: 0.8rem ;
+  margin: 1.5rem;
   display: inline-block;
   margin: 1rem auto;
   border-radius: 15px;
-  font-size: 4rem;
+  font-size: 2rem;
   transition: all 0.2s;
+  background-color: var(--dark-blue)
 }
 
-.btn:hover {
+.btnAll:hover,
+.btnA:hover,
+.btnB:hover,
+.btnC:hover,
+.color:hover {
   transform: translateY(-2px);
+  border-color: var(--dark-red);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
