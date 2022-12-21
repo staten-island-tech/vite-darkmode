@@ -11,58 +11,80 @@ const DOMSelectors={
     btnA: document.querySelector(".btnA"),
     btnB: document.querySelector(".btnB"),
     btnC: document.querySelector(".btnC"),
-    appDisplay: document.querySelector(".appetizers"),
-    phoDisplay: document.querySelector(".noodleSoup"),
-    sandDisplay: document.querySelector(".sandwiches"),
-    app: document.querySelector(""),
-    pho: document.querySelector(""),
-    banh: document.querySelector(""),
+    btnAll: document.querySelector(".btnAll"),
+    appDisplay: document.querySelector(".appDiv"),
+    phoDisplay: document.querySelector(".phoDiv"),
+    sandDisplay: document.querySelector(".sandDiv"),
 };
 
-DOMSelectors.btnA.addEventListener("click", function(){
+function clickBtnA(){
+    DOMSelectors.btnA.addEventListener("click", function(){
     let him = change("Appetizer");
     console.log(him);
-    A();
-})
+    htmlHim(menu[0]);
+    htmlHim(menu[1]);
+    htmlHim(menu[2]);
+});
+}
 
+function clickBtnB(){
 DOMSelectors.btnB.addEventListener("click", function(){
-    let her = change("Pho");
-    console.log(her);
-    B();
-})
+    let him = change("Pho");
+    console.log(him);
+    htmlHer(menu[3]);
+    htmlHer(menu[4]);
+    htmlHer(menu[5]);
+});
+}
 
+function clickBtnC(){
 DOMSelectors.btnC.addEventListener("click", function(){
-    let temp = change("Banh Mi");
-    console.log(temp)
-    C();
-})
+    let him = change("Banh");
+    console.log(him);
+    htmlThem(menu[6]);
+    htmlThem(menu[7]);
+    htmlThem(menu[8]);
+});
+}
 
-function A(){
+clickBtnA();
+clickBtnB();
+clickBtnC();
+   
+// DOMSelectors.btnD.addEventListener("click", function(){
+
+// })
+
+function htmlHim(dish){
     DOMSelectors.appDisplay.insertAdjacentHTML(
-        "afterbegin",
+        "beforeend",
         `<div class="dish-card">
-        <h3 class="dish-name">${app.name}</h3>
-        <h4 class="dish-description">${app.description}</h4>
-        <h4 class="dish-name">${app.price}</h4>
-        </div>`
+        <h3 class="dish-name">${dish.name}</h3>
+        <h4 class="dish-description">${dish.description}</h4>
+        <h4 class="dish-name">${dish.price}</h4>
+        </div>
+       `
 )}
 
-function B(){
-    DOMSelectors.appDisplay.insertAdjacentHTML(
-        "afterbegin",
+function htmlHer(dish){
+    DOMSelectors.phoDisplay.insertAdjacentHTML(
+        "beforeend",
         `<div class="dish-card">
-        <h3 class="dish-name">${app.name}</h3>
-        <h4 class="dish-description">${app.description}</h4>
-        <h4 class="dish-name">${app.price}</h4>
-        </div>`
+        <h3 class="dish-name">${dish.name}</h3>
+        <h4 class="dish-description">${dish.description}</h4>
+        <h4 class="dish-name">${dish.price}</h4>
+        </div>
+       `
 )}
-
-function C(){
-    DOMSelectors.appDisplay.insertAdjacentHTML(
-        "afterbegin",
+function htmlThem(dish){
+    DOMSelectors.sandDisplay.insertAdjacentHTML(
+        "beforeend",
         `<div class="dish-card">
-        <h3 class="dish-name">${app.name}</h3>
-        <h4 class="dish-description">${app.description}</h4>
-        <h4 class="dish-name">${app.price}</h4>
-        </div>`
+        <h3 class="dish-name">${dish.name}</h3>
+        <h4 class="dish-description">${dish.description}</h4>
+        <h4 class="dish-name">${dish.price}</h4>
+        </div>
+       `
 )}
+//in the addeventlistener function, use map to create a new function out of the change(); with .map and in that function 
+//define the three values of each of those arrays .value (ie: let dishOne = newArray[o].value)

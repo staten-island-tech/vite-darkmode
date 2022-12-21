@@ -5,14 +5,15 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: var(--primary);
 }
 
 :root {
   --black: #000;
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
+  --light-blue: #fff9a1;
+  --dark-blue: hsl(49, 92%, 76%);
   --light-red: #f87171;
-  --dark-red: #dc2626;
+  --dark-red: #ee4d4d;
   --gray: #252c30;
 
   /*Intentions */
@@ -35,10 +36,6 @@ body,
 .cool {
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
-}
-
-.hero {
-  background-color: var(--primary);
 }
 
 h1 {
@@ -73,12 +70,46 @@ h5 {
 .noodleSoup,
 .sandwiches{
   margin: 3rem;
+  padding: 10px;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+.subhead{
+  display: block;
+}
+
+.appDiv,
+.phoDiv,
+.sandDiv{
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.dish-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+  width: 25%;
+  margin: 2rem;
+
+  border-color: #000;
+}
+
+.filters{
+  display: inline;
 }
 
 .btns,
 .btns:link,
-.btns:visited 
- {border: none;
+.btns:visited {
+  border: none;
   display: inline;
   text-align: center;
   justify-content: space-around;
@@ -94,3 +125,6 @@ h5 {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
+
+
+
