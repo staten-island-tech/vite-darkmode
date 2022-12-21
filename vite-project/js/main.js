@@ -12,7 +12,7 @@ const DOMSelectors={
     btnB: document.querySelector(".btnB"),
     btnC: document.querySelector(".btnC"),
     btnAll: document.querySelector(".btnAll"),
-    appDisplay: document.querySelector(".appDiv"),
+    appDisplay: document.querySelector(".appetizers"),
     phoDisplay: document.querySelector(".phoDiv"),
     sandDisplay: document.querySelector(".sandDiv"),
     him: change("Appetizer"),
@@ -26,10 +26,16 @@ DOMSelectors.btnA.addEventListener("click", function(){
     map1.forEach(function htmlHim(dish){
     DOMSelectors.appDisplay.insertAdjacentHTML(
         "beforeend",
-        `<div class="dish-card">
+        `    <div class="subhead">
+        <h3 class="hero">appetizers!</h3>
+        <h4 class="hero">here are some good starters</h4>
+      </div>
+        <div class="appDiv">
+        <div class="dish-card">
         <h3 class="dish-name">${dish.name}</h3>
         <h4 class="dish-description">${dish.description}</h4>
         <h4 class="dish-name">${dish.price}</h4>
+        </div>
         </div>
        `
 )})
