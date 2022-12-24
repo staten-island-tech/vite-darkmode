@@ -4,7 +4,7 @@ name: "Cha Gio",
 description: "Vietnamese Spring Roll",
 price: 8.95,
 rating: 9.9,
-img: "link", 
+img: "",
 vegetarian: false
 },
 
@@ -13,7 +13,7 @@ name: "Gio Cuon",
 description: "Summer Roll Shrimp, Vegetable with Rice Paper",
 price: 3.25,
 rating: 9.9,
-img: "link", 
+img: "https://www.siftandsimmer.com/wp-content/uploads/2021/10/goi-cuon2.jpg", 
 vegetarian: false
 },
 
@@ -22,7 +22,7 @@ name: "Bi Cuon",
 description: "Shredded Pork with Vegetable Roll with Rice Paper",
 price: 2.95,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -31,7 +31,7 @@ name: "Pho Dac Biet",
 description: "Special Rice Noodle Soup with Beef, Brisket, Navel, Flank, and Tendon",
 price: 4.50,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -40,7 +40,7 @@ name: "Pho Suon Nuong",
 description: "Grilled Pork Chop on Rice Noodle Soup",
 price: 4.25,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -49,7 +49,7 @@ name: "Pho Ga Nuong",
 description: "Grilled Chicken on Rice Noodle Soup",
 price: 4.75,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -58,7 +58,7 @@ name: "Bahn Mi Dac Biet",
 description: "Vietnamese Bread",
 price: 2.50,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -67,7 +67,7 @@ name: "Bahn Mi Cary Ga",
 description: "Curry Chicken with Bread",
 price: 4.50,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 
@@ -76,7 +76,7 @@ name: "Bahn Mi Bo Kho",
 description: "Curry Beef Stew with Bread",
 price: 4.50,
 rating: 9.9,
-img: "link", 
+img: "", 
 vegetarian: false
 },
 ]
