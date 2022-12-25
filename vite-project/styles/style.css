@@ -1,6 +1,8 @@
+
 html,
 body,
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -158,4 +160,52 @@ h5 {
 
 .image{
   height: 40vh;
+}
+
+@media all and (max-width: 820px) {
+  /* iPad Air*/
+  .dish-card{
+    height: 40vh;
+    width: 40%;
+  }
+  .image{
+    height: 20vh;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  /* iPphone 12 Pro*/
+  .dish-card{
+    height: 40vh;
+    width: 80%;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+  .image{
+    height: 20vh;
+  }
+  .btnA,
+  .btnA:link,
+  .btnA:visited,
+  .btnB,
+  .btnB:link,
+  .btnB:visited,
+  .btnC,
+  .btnC:link,
+  .btnC:visited,
+  .btnAll,
+  .btnAll:link,
+  .btnAll:visited,
+  .color,
+  .color:link,
+  .color:visited {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+  }
+
 }
